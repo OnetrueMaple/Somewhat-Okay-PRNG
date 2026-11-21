@@ -1,0 +1,9 @@
+# Testing folders
+/PractRand/**
+/dieharder/**
+
+# CPython
+/__pycache__/**
+
+# My dev history, before git
+/history/**
