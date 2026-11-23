@@ -2,6 +2,7 @@
 
 ### What is this project?
 It's a program that tries to produce random numbers with real entropy, no matter the source, no matter the OS.
+If I can do so statelessly that would be cool too.
 
 ### How to use
 
