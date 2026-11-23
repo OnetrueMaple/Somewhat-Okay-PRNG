@@ -1,13 +1,27 @@
-# Somewhat Acceptable PRNG
+## Somewhat Acceptable PRNG
+A program to generate random numbers using real entropy on any operating system.
 
-### Status
-Work in progress. I work on this for fun, not to beat Shishua or ChaCha20.
+## Features
+    * Uses timing variance for entropy
+    * Encrypts and hashes entropy for irreversible and "secure" bitstream outputs
 
-### What is this project?
-It's a program that tries to produce random numbers with real entropy and maximum unpredictability, no matter the source, no matter the OS.
+## Technologies
+    * ChaCha20 for encryption
+    * Python for OS-independence
 
-### How to use
+## Usage
+You only need to download the 'rng.py' file and to run it with Python installed on your system. If you run it through your terminal: 'python3 rng.py' it will output
+a bitstream to the terminal for you to copy. Alternatively, you can change the 'toFile' variable to 'True' and it will output the bitstream to a file instead.
 
-Right now, just download the files and run the 'rng.py' document. Ex: 'python3 rng.py' in terminal.
-You'll have to edit the 'nums' parameter inside the test() function near the bottom of the file yourself, and its all in bitstream form for now.
-It's like that for testing purposes, most of what you see now is subject to change as I work on this more.
+## Preview
+
+```
+user@User:$ python3 rng.py
+Making large string...
+Done with string in 1.95317s!
+Generating 1000 bits...
+Seed:
+1011100101100011000101011001001010100010000000000010000000101100011111001101001110000011100101100001000001110001110010100111111110110011110111001110011011011011111000100111001110100000011110110001111100101101110000110010001010010110011000111101110101110111011001100111111101001110000100000011100101010111100101010000011110011100010000010101100001100001100011000010100001010011010010100011101110000100010000001110010001011010111001100011110111110101001111011010111010000110000010010101110001111001111011101111001010110010001001101110110011110001010001011011100111010110001011010110010001100100000011111101110010001100000101000010011000000001100000111011011101110011101011110011000100111001101001111100001000111000010101001100011110001000110011011010101100100110100101100001101001010111100110000010111100100111111001000001001110001100100110000100101101100011011000111111101011011100000110000000100001010010001100100001011001000110111011011011110011111100111000110100010000101011001101100000000001110100110000110011001010011101
+Length:                          1024
+Generation time: 0.007237s
+```

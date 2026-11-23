@@ -432,7 +432,7 @@ def test():
     #'''
     stop   = ""
     toFile = False
-    nums = 1 * 1000 * 1000 # Each char is 1 byte, 1000 chars = 1000 bytes = 1 KB....
+    nums = 1 * 1000 # Each char is 1 byte, 1000 chars = 1000 bytes = 1 KB....
     while(stop == ""):
         print(f"{'\033[94m'}Generating {nums} bits...")
         genstart = perf_counter()
